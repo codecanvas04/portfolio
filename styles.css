@@ -897,6 +897,7 @@ main > section {
   cursor: pointer;
 }
 
+
 .project-open::after {
   content: "";
 
@@ -1625,4 +1626,31 @@ main > section {
     transition-duration: 0.01ms !important;
   }
 
+}
+/* CLICKABLE PROJECT TITLES */
+.project-title .project-open {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.project-title .project-open span {
+  color: #3c185c;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 8px;
+  transition: color 0.2s ease, text-underline-offset 0.2s ease;
+}
+
+/* Subtle hover effect */
+.project-title .project-open:hover span {
+  color: #7a25c5;
+  text-underline-offset: 11px;
+}
+
+/* Remove the old "click to explore" text */
+.project-title .project-open::after {
+  content: none;
 }

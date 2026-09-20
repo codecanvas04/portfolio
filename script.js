@@ -1258,6 +1258,7 @@ function initReveal() {
     );
 
 
+    
   elements.forEach(
     (element) => {
 
