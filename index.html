@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Pari Vora | Computer Engineering Student</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Pari Vora, a Computer Engineering student at DJSCE interested in AI, machine learning and web development."
+  >
+
+  <meta name="theme-color" content="#f5cdb9">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+
+  <!-- SVG DEFINITIONS -->
+
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+
+      <symbol id="sparkle" viewBox="0 0 24 24">
+        <path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/>
+      </symbol>
+
+      <filter id="cloudify-a" x="-30%" y="-40%" width="160%" height="180%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.011 0.018" numOctaves="4" seed="11" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="110" xChannelSelector="R" yChannelSelector="G" result="warped"/>
+        <feGaussianBlur in="warped" stdDeviation="13"/>
+      </filter>
+
+      <filter id="cloudify-b" x="-30%" y="-40%" width="160%" height="180%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves="4" seed="42" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="130" xChannelSelector="R" yChannelSelector="G" result="warped"/>
+        <feGaussianBlur in="warped" stdDeviation="15"/>
+      </filter>
+
+    </defs>
+  </svg>
+
+
+  <!-- SKY -->
+
+  <div class="sky" aria-hidden="true">
+    <span class="cloud c1"></span>
+    <span class="cloud c2"></span>
+    <span class="cloud c3"></span>
+    <span class="cloud c4"></span>
+    <span class="cloud c5"></span>
+  </div>
+
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <!-- ================= NAVIGATION ================= -->
+
+  <header class="site-header">
+
+    <div class="nav-bar">
+
+      <a class="brand" href="#home">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        Pari Vora
+      </a>
+
+      <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Work &amp; Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="icon-btn menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- PAGE COUNTER -->
+
+  <div class="page-count" aria-hidden="true">
+    <span class="pc-now" id="page-current">01</span>
+    <span class="pc-total" id="page-total">/06</span>
+  </div>
+
+
+  <main id="main">
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero reveal" aria-labelledby="hero-title">
+
+      <div class="container hero-inner">
+
+        <p class="hero-small">
+          hello, welcome to my little corner of the internet
+        </p>
+
+        <div class="hero-title-wrap">
+
+          <span class="orbit" aria-hidden="true"></span>
+
+          <h1 id="hero-title">Hi, I am Pari.</h1>
+
+          <svg class="sparkle s-a" viewBox="0 0 24 24" aria-hidden="true">
+            <use href="#sparkle"/>
+          </svg>
+
+          <svg class="sparkle s-b" viewBox="0 0 24 24" aria-hidden="true">
+            <use href="#sparkle"/>
+          </svg>
+
+          <svg class="sparkle s-c" viewBox="0 0 24 24" aria-hidden="true">
+            <use href="#sparkle"/>
+          </svg>
+
+          <svg class="sparkle s-d" viewBox="0 0 24 24" aria-hidden="true">
+            <use href="#sparkle"/>
+          </svg>
+
+        </div>
+
+        <p class="hero-tagline">
+          <span class="mark">Painting ideas on a canvas of code.</span>
+        </p>
+
+        <p class="hero-lede">
+          Teaching machines to learn. Building things people can actually use.
+          I am a second-year Computer Engineering student at DJSCE, Mumbai.
+          I'm currently exploring machine learning, its various algorithms,
+          building projects with Python and JavaScript, and figuring things
+          out one step at a time.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Say hi</a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= LEETCODE ================= -->
+
+    <section id="leetcode" class="leetcode reveal" aria-labelledby="lc-title">
+
+      <div class="container">
+
+        <div class="glass-card lc-card">
+
+          <div class="lc-copy">
+
+            <p class="eyebrow">Currently practising</p>
+
+            <h2 id="lc-title">200+ LeetCode problems solved.</h2>
+
+            <p>
+              Steady practice in data structures and algorithms,
+              one problem at a time.
+            </p>
+
+            <ul class="chips">
+              <li class="chip">C++</li>
+              <li class="chip">Java</li>
+              <li class="chip">DSA</li>
+            </ul>
+
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://leetcode.com/u/pari_07/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See my LeetCode profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section reveal" aria-labelledby="about-title">
+
+      <div class="container about-grid">
+
+        <div class="about-copy">
+
+          <p class="eyebrow">A little about me</p>
+
+          <h2 id="about-title">Curious first. ML engineer in the making.</h2>
+
+          <p>
+            Exploring AI and Machine learning is what I'm most into right now.
+            I like understanding what is actually happening behind
+            a model or an LLM instead of just using it as a black box or a tool.
+          </p>
+
+          <p>
+            I'm currently learning through projects, guided practice
+            and a lot of experimentation. I've worked with Python,
+            NumPy, Pandas, Flask and basic machine learning algorithms,
+            while continuing to strengthen my programming and DSA skills.
+          </p>
+
+          <p>
+            I also enjoy web development because it gives ideas a
+            visual form. HTML, CSS and JavaScript let me turn something
+            I've imagined into something people can actually interact with.
+          </p>
+
+        </div>
+
+        <aside class="glass-card note">
+
+          <p class="eyebrow">Right now</p>
+
+          <h3>What I'm focused on</h3>
+
+          <ul>
+            <li>Going deeper into AI and machine learning</li>
+            <li>Building projects that solve real problems</li>
+            <li>Improving DSA and problem solving</li>
+            <li>Learning by actually building things</li>
+          </ul>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= WORK + PROJECTS ================= -->
+
+    <section id="experience" class="section experience-section reveal" aria-labelledby="exp-title">
+
+      <div class="container">
+
+        <p class="eyebrow">Experience &amp; projects</p>
+
+        <h2 id="exp-title">What I've built (till now)</h2>
+
+        <p class="section-lede">
+          A few things I've worked on so far, with plenty more to come.
+        </p>
+
+        <div class="tabs" role="tablist" aria-label="Experience and projects">
+
+          <button
+            type="button"
+            role="tab"
+            id="tab-projects"
+            aria-selected="true"
+            aria-controls="panel-projects"
+          >
+            Projects
+          </button>
+
+          <button
+            type="button"
+            role="tab"
+            id="tab-work"
+            aria-selected="false"
+            aria-controls="panel-work"
+            tabindex="-1"
+          >
+            Work
+          </button>
+
+        </div>
+
+
+        <!-- PROJECTS -->
+
+        <div
+          id="panel-projects"
+          role="tabpanel"
+          aria-labelledby="tab-projects"
+          tabindex="0"
+        >
+
+          <div class="project-grid">
+
+            <article class="project project-featured">
+
+              <div>
+                <p class="project-number">01</p>
+
+                <h3 class="project-title">
+                  <button
+                    type="button"
+                    class="project-open"
+                    data-project="music-lab"
+                    aria-haspopup="dialog"
+                  >
+                    Music Lab
+                  </button>
+                </h3>
+
+                <p class="project-punch">
+                  114K+ tracks, one place to find your next song.
+                </p>
+              </div>
+
+              <ul class="chips">
+                <li class="chip">Python</li>
+                <li class="chip">Pandas</li>
+                <li class="chip">NumPy</li>
+                <li class="chip">Flask</li>
+                <li class="chip">JavaScript</li>
+              </ul>
+
+              <span class="project-arrow" aria-hidden="true">↗</span>
+
+            </article>
+
+
+            <article class="project">
+
+              <div>
+                <p class="project-number">02</p>
+
+                <h3 class="project-title">
+                  <button
+                    type="button"
+                    class="project-open"
+                    data-project="youtube-clone"
+                    aria-haspopup="dialog"
+                  >
+                    YouTube homepage clone
+                  </button>
+                </h3>
+
+                <p class="project-punch">
+                  A front-end recreation built from the ground up.
+                </p>
+              </div>
+
+              <ul class="chips">
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+              </ul>
+
+              <span class="project-arrow" aria-hidden="true">↗</span>
+
+            </article>
+
+
+            <article class="project">
+
+              <div>
+                <p class="project-number">03</p>
+
+                <h3 class="project-title">
+                  <button
+                    type="button"
+                    class="project-open"
+                    data-project="rock-paper-scissors"
+                    aria-haspopup="dialog"
+                  >
+                    Rock, paper, scissors
+                  </button>
+                </h3>
+
+                <p class="project-punch">
+                  A small game that taught me how code becomes interactive.
+                </p>
+              </div>
+
+              <ul class="chips">
+                <li class="chip">JavaScript</li>
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+              </ul>
+
+              <span class="project-arrow" aria-hidden="true">↗</span>
+
+            </article>
+
+
+            <article class="project">
+
+              <div>
+                <p class="project-number">04</p>
+
+                <h3 class="project-title">
+                  <button
+                    type="button"
+                    class="project-open"
+                    data-project="todo-list"
+                    aria-haspopup="dialog"
+                  >
+                    To-do list
+                  </button>
+                </h3>
+
+                <p class="project-punch">
+                  Turning a simple list into a hands-on DOM exercise.
+                </p>
+              </div>
+
+              <ul class="chips">
+                <li class="chip">JavaScript</li>
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+              </ul>
+
+              <span class="project-arrow" aria-hidden="true">↗</span>
+
+            </article>
+
+
+            <article class="project">
+
+              <div>
+                <p class="project-number">05</p>
+
+                <h3 class="project-title">
+                  <button
+                    type="button"
+                    class="project-open"
+                    data-project="calculator"
+                    aria-haspopup="dialog"
+                  >
+                    Calculator
+                  </button>
+                </h3>
+
+                <p class="project-punch">
+                  Where button clicks finally started doing some maths.
+                </p>
+              </div>
+
+              <ul class="chips">
+                <li class="chip">JavaScript</li>
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+              </ul>
+
+              <span class="project-arrow" aria-hidden="true">↗</span>
+
+            </article>
+
+          </div>
+
+
+          <p class="projects-foot">
+            More on the way.
+            <a
+              href="https://github.com/codecanvas04"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See everything on GitHub ↗
+            </a>
+          </p>
+
+        </div>
+
+
+        <!-- WORK -->
+
+        <div
+          id="panel-work"
+          role="tabpanel"
+          aria-labelledby="tab-work"
+          tabindex="0"
+          hidden
+        >
+
+          <ul class="work-list">
+
+            <li class="work-item">
+
+              <div>
+                <p class="work-number">01</p>
+                <h3>Co-Comm member</h3>
+                <p class="org">DJSCE ACM Student Chapter</p>
+              </div>
+
+              <p class="work-desc">
+                Working with a team of students at the college's ACM chapter.
+              </p>
+
+            </li>
+
+
+            <li class="work-item">
+
+              <div>
+                <p class="work-number">02</p>
+                <h3>AI/ML mentee</h3>
+                <p class="org">Synapse</p>
+              </div>
+
+              <p class="work-desc">
+                Learning AI and machine learning through guided practice,
+                from the basics up.
+              </p>
+
+            </li>
+
+
+            <li class="work-item">
+
+              <div>
+                <p class="work-number">03</p>
+                <h3>Event organizer and volunteer</h3>
+                <p class="org">School events and Trinity</p>
+              </div>
+
+              <p class="work-desc">
+                Organized and managed school events as part of a team,
+                designed posters on relevant themes, and volunteered in Trinity.
+              </p>
+
+            </li>
+
+          </ul>
+
+
+          <div class="glass-card future-goals">
+
+            <p class="eyebrow">Looking ahead</p>
+
+            <h3>Future goals</h3>
+
+            <p>
+              And that's not all. Looking forward to building my knowledge in AI
+              and its applications, participating in more hackathons and challenges,
+              and overall exploring my full potential. My goal is to grow into a
+              Computer Engineer who builds technology that is genuinely useful and
+              creates real-world impact. I want to keep learning, keep building,
+              and eventually work on ideas that can make a difference in the way
+              people interact with technology. I still have a long way to go,
+              a lot of things to explore, but I'm excited about the journey ahead!
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section reveal" aria-labelledby="skills-title">
+
+      <div class="container">
+
+        <p class="eyebrow">Skills</p>
+
+        <h2 id="skills-title">Tools I reach for</h2>
+
+        <p class="section-lede">
+          Always learning, always adding to this list.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3>Data &amp; ML</h3>
+
+            <ul class="chips">
+              <li class="chip">NumPy</li>
+              <li class="chip">Pandas</li>
+              <li class="chip">Matplotlib</li>
+              <li class="chip">Basic ML algorithms</li>
+            </ul>
+          </div>
+
+
+          <div class="skill-group">
+            <h3>Languages</h3>
+
+            <ul class="chips">
+              <li class="chip">C/C++</li>
+              <li class="chip">Java</li>
+              <li class="chip">Python</li>
+              <li class="chip">JavaScript</li>
+            </ul>
+          </div>
+
+
+          <div class="skill-group">
+            <h3>Web</h3>
+
+            <ul class="chips">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">DOM manipulation</li>
+              <li class="chip">Node.js &amp; Express.js</li>
+              <li class="chip">Flask</li>
+            </ul>
+          </div>
+
+
+          <div class="skill-group">
+            <h3>Tools</h3>
+
+            <ul class="chips">
+              <li class="chip">Git &amp; GitHub</li>
+              <li class="chip">Canva</li>
+              <li class="chip">MS Word</li>
+              <li class="chip">PowerPoint</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="skills-soft">
+          Beyond the code: problem solving, creative thinking,
+          collaboration, communication, event coordination,
+          time management and leadership.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section reveal" aria-labelledby="edu-title">
+
+      <div class="container">
+
+        <p class="eyebrow">Education</p>
+
+        <h2 id="edu-title">The classroom part</h2>
+
+        <ol class="timeline">
+
+          <li>
+            <h3>Dwarkadas J. Sanghvi College of Engineering</h3>
+            <p class="edu-what">B.Tech in Computer Engineering, second year</p>
+            <p class="edu-score">First-year CGPA: <strong>9.36</strong></p>
+          </li>
+
+          <li>
+            <h3>Prakash College, Mumbai</h3>
+            <p class="edu-what">Higher Secondary Certificate (HSC), 2023 to 2025</p>
+            <p class="edu-score">Score: <strong>84%</strong></p>
+          </li>
+
+          <li>
+            <h3>Universal High School, Malad</h3>
+            <p class="edu-what">ICSE, Class X, 2023</p>
+            <p class="edu-score">Score: <strong>97%</strong></p>
+          </li>
+
+        </ol>
+
+        <h3 class="cert-title">Certifications</h3>
+
+        <ul class="cert-list">
+
+          <li>
+            <strong>Python Essentials 1</strong>
+            <span>Cisco Networking Academy</span>
+          </li>
+
+          <li>
+            <strong>Fundamentals of Artificial Intelligence</strong>
+            <span>IBM SkillsBuild</span>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section contact reveal" aria-labelledby="contact-title">
+
+      <div class="container">
+
+        <p class="eyebrow">Get in touch</p>
+
+        <h2 id="contact-title">
+          Got a project, a question, or a good playlist?
+          Send it over.
+        </h2>
+
+        <p class="contact-sub">
+          Always eager to connect with new people!
+        </p>
+
+        <div class="contact-actions">
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="copy-email"
+            data-email="parihvora@gmail.com"
+          >
+            Copy email
+          </button>
+
+          <a
+            class="btn btn-ghost"
+            href="mailto:parihvora@gmail.com"
+          >
+            Open mail app
+          </a>
+
+        </div>
+
+
+        <div class="contact-details">
+
+          <div class="contact-detail">
+            <span class="contact-label">Email</span>
+            <a href="mailto:parihvora@gmail.com">
+              parihvora@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+918355930359">
+              +91 8355930359
+            </a>
+          </div>
+
+        </div>
+
+
+        <span
+          class="sr-only"
+          id="copy-status"
+          role="status"
+          aria-live="polite"
+        ></span>
+
+
+        <ul class="social-links">
+
+          <li>
+            <a
+              href="https://github.com/codecanvas04"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pari-vora-496367385/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://leetcode.com/u/pari_07/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LeetCode ↗
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+      <p>Made with curiosity, code and a lot of ideas.</p>
+    </div>
+
+  </footer>
+
+
+  <!-- ================= PROJECT DIALOG ================= -->
+
+  <dialog
+    class="sheet"
+    id="project-dialog"
+    aria-labelledby="sheet-title"
+  >
+
+    <div class="sheet-inner">
+
+      <button
+        type="button"
+        class="sheet-back"
+        id="sheet-back"
+      >
+        ← Back
+      </button>
+
+      <p class="eyebrow">Project</p>
+
+      <h3 class="sheet-title" id="sheet-title"></h3>
+
+      <p class="sheet-punch" id="sheet-punch"></p>
+
+      <p class="sheet-desc" id="sheet-desc"></p>
+
+      <h4 class="sheet-sub" id="sheet-highlights-title">
+        What I learned
+      </h4>
+
+      <ul
+        class="sheet-list"
+        id="sheet-highlights"
+      ></ul>
+
+      <h4 class="sheet-sub">
+        Built with
+      </h4>
+
+      <ul
+        class="chips"
+        id="sheet-tech"
+      ></ul>
+
+      <div class="sheet-actions">
+
+        <a
+          class="btn btn-primary"
+          id="sheet-repo"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on GitHub ↗
+        </a>
+
+        <a
+          class="btn btn-ghost"
+          id="sheet-demo"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          hidden
+        >
+          Live demo ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </dialog>
+
+
+</body>
+</html>
